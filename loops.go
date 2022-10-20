@@ -12,6 +12,11 @@ func main() {
     if i == 95 {
       break
     }
-    
+  }  
     fmt.Print(i, " ")
-  }     
+}
+func main
+    fmt.Println()
+    i := 10
+    for {}
+    
