@@ -18,4 +18,26 @@ func main() {
   fmt.Println("cZero:", cZero)
               
   
+  x := 12
+  k := 5
+  fmt.Println(x)
+  fmt.Println("Type of x: %T\n", x)
+  
+  div := x / k
+  fmt.Println("div", div)
+  
+  
+  var m, n float64
+  m = 1.223
+  fmt.Prinln("m, n:", m, n)
+  
+  y := 4/ 2.3
+  fmt.Println("y:", y)
+  
+  divFloat := float64(x) / float64(k)
+  fmt.Println("divFloat", divFloat)
+  fmt.Println("type of divFloat: %t\n", divFloat)
+}  
+  
+  
   
