@@ -34,3 +34,13 @@ func main() {
     fmt.Println("Usage:", os.Args[0], "MIN MAX TOTAL TOPIC")
     return
   }
+  
+  
+  partition := 0
+  conn, err := kafka.DialLeader(context.Background(), "tcp", "localhost:9092", topic, partition)
+  if err != nil {
+    fmt.Printf("%s\n", err)
+    return
+  }
+  
+  rand.Seed(time.now().Unix())
