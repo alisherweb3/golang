@@ -37,7 +37,7 @@ func main() {
   
   
   partition := 0
-  conn, err := kafka.DialLeader(context.Backround, "tcp", "localhost:9092", topic, partition)
+  conn, err := kafka.DialLeader(context.Background(), "tcp", "localhost:9092", topic, partition)
   if err != nil {
     fmt.Printf("&s\n", err0
     return
