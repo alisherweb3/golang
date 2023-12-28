@@ -14,6 +14,8 @@ Audible
 In case the given input is negative, your program should output "Wrong Input".
 */
 
+
+/* eto resheniya vozmojno nepravilno
 package main
 
 import "fmt"
@@ -32,4 +34,24 @@ func main() {
     default:
       fmt.Println("Wrong Input")
   }
+}
+*/
+
+package main
+
+import "fmt"
+
+func main() {
+	var f int
+	fmt.Scanln(&f)
+	//your code goes here
+	if f < 0 {
+		fmt.Print("Wrong Input")
+	} else if f < 20 {
+		fmt.Print("Infrasound")
+	} else if f <= 20000 {
+		fmt.Print("Audible")
+	} else {
+		fmt.Print("Ultrasound")
+	}
 }
